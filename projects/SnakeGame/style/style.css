@@ -1,0 +1,446 @@
+html {
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #001440;
+  font-size: 14px;
+}
+
+#game-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -ms-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+
+.menu-content-container {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  z-index: 1;
+  height: 50%;
+  padding: 1em;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.1em;
+  -webkit-animation: fade-in ease-out 0.5s 1;
+  -moz-animation: fade-in ease-out 0.5s 1;
+  animation: fade-in ease-out 0.5s 1;
+}
+
+/* HEADINGS */
+
+h1 {
+  color: #fff;
+  margin: 0;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* TEXT STYLES */
+
+.desktop-controls-text {
+  color: #ff9933;
+}
+
+.mobile-controls-text {
+  color: #66ff66;
+}
+
+.special-menu-text {
+  color: #df00fe;
+  text-shadow: 0 0 1em;
+}
+
+.blinking {
+  -webkit-animation: blink linear 1.5s 2s forwards infinite;
+  -moz-animation: blink linear 1.5s 2s forwards infinite;
+  animation: blink linear 1.5s 2s forwards infinite;
+}
+
+/* DOM MANIPULATION */
+
+.avoid-clicks {
+  /* https://css-tricks.com/almanac/properties/p/pointer-events/
+     This is used to prevent any clicking/zooming on mobile which might
+     interfere with the HammerJS control of the whole body element.
+     It is only removed on menu buttons so they can be clicked. */
+  pointer-events: none;
+}
+
+.hidden {
+  /* !important is used here to ensure nothing can interfere with elements
+     being hidden. */
+  display: none !important;
+}
+
+.paused-effect {
+  -webkit-filter: opacity(0.3) blur(0.1em);
+  filter: opacity(0.3) blur(0.1em);
+}
+
+/* MENU SELECTION BUTTONS */
+
+#menu-buttons-container {
+  padding: 0 0.5em;
+}
+
+#menu-buttons-container button {
+  min-width: 5.4em;
+  margin: 0.37em;
+  background-color: #001440;
+  border: solid 1px #fff;
+  border-radius: 5%;
+  color: #fff;
+  font-size: 0.9em;
+  font-family: "Orbitron", sans-serif;
+  padding: 0.5em;
+  z-index: 1;
+  /* This cancels the .avoid-clicks class */
+  pointer-events: auto;
+}
+
+#menu-buttons-container button:hover {
+  background-color: #fff;
+  color: #001440;
+}
+
+/* INSTRUCTIONS SCREEN */
+
+#instructions-container>p {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+/* SCORES SCREEN */
+
+#session-scores-container {
+  min-width: 20%;
+}
+
+#scores-award-text {
+  margin-top: 0;
+}
+
+#session-scores-container ol {
+  list-style-type: none;
+  padding-left: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* OPTIONS SCREEN */
+
+#checkbox-container {
+  border-bottom: solid;
+}
+
+#checkbox-container,
+#radio-container {
+  padding: 1em;
+}
+
+.options-choice-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.6em;
+}
+
+.options-choice-button>span {
+  color: #fff;
+}
+
+.options-choice-button>input {
+  /* https://dev.to/proticm/styling-html-checkboxes-is-super-easy-302o 
+     The height and width of this styled checkbox are the only properties
+     which are not affected by the blanket 'em' changes in the media queries */
+  height: 1.5em;
+  width: 1.5em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #fff;
+  border-radius: 5%;
+  outline: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background-color: #001440;
+  cursor: default;
+  margin: 0 1em 0 0;
+  /* This cancels the .avoid-clicks class */
+  pointer-events: auto;
+}
+
+#radio-container>.options-choice-button>input {
+  border-radius: 50%;
+}
+
+.options-choice-button>input:checked {
+  background-color: #fff;
+}
+
+.options-choice-button>input:checked+span::before {
+  content: "";
+  display: block;
+  text-align: center;
+  position: absolute;
+}
+
+.options-choice-button>input:active {
+  border: 2px solid #34495e;
+}
+
+.options-choice-button>input:disabled {
+  border-style: dotted;
+  cursor: default;
+}
+
+/* ANIMATIONS */
+
+/* rem are used instead of em here to prevent the glow effect pushing 
+  other elements out of place */
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 0.1rem #fff, 0 0 0.2rem #e60073, 0 0 0.3rem #e60073,
+      0 0 0.4rem #e60073, 0 0 0.5rem #e60073, 0 0 0.6rem #e60073,
+      0 0 0.7rem #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 0.2rem #fff, 0 0 0.3rem #ff4da6, 0 0 0.4rem #ff4da6,
+      0 0 0.5rem #ff4da6, 0 0 0.6rem #ff4da6, 0 0 0.7rem #ff4da6,
+      0 0 0.8rem #ff4da6;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 0.1rem #fff, 0 0 0.2rem #e60073, 0 0 0.3rem #e60073,
+      0 0 0.4rem #e60073, 0 0 0.5rem #e60073, 0 0 0.6rem #e60073,
+      0 0 0.7rem #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 0.2rem #fff, 0 0 0.3rem #ff4da6, 0 0 0.4rem #ff4da6,
+      0 0 0.5rem #ff4da6, 0 0 0.6rem #ff4da6, 0 0 0.7rem #ff4da6,
+      0 0 0.8rem #ff4da6;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+  }
+
+  25% {
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
+  }
+
+  50% {
+    -webkit-filter: opacity(0);
+    filter: opacity(0);
+  }
+
+  75% {
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
+  }
+
+  100% {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+  }
+
+  25% {
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
+  }
+
+  50% {
+    -webkit-filter: opacity(0);
+    filter: opacity(0);
+  }
+
+  75% {
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
+  }
+
+  100% {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    -webkit-filter: opacity(0);
+    filter: opacity(0);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  100% {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-filter: opacity(0);
+    filter: opacity(0);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  100% {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media (orientation: landscape) and (min-width: 420px) {
+  #checkbox-container {
+    border: none;
+  }
+
+  #options-container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
+  #radio-container {
+    border-left: solid;
+  }
+}
+
+@media (orientation: portrait) {
+  #canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 568px) {
+  body {
+    font-size: 1.1em;
+  }
+}
+
+@media (orientation: landscape) {
+  #canvas {
+    width: auto;
+    height: 100%;
+  }
+
+  #menu-buttons-container button {
+    min-width: 6em;
+    margin: 0.5em 2em;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 460px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  #menu-buttons-container button {
+    min-width: 6em;
+    margin: 0.5em 2em;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 992px) and (min-height: 520px) {
+  body {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 600px) {
+  body {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 680px) {
+  body {
+    font-size: 1.8em;
+  }
+
+  .options-choice-button>input {
+    height: 2em;
+    width: 2em;
+  }
+}

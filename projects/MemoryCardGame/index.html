@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Card Game</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/3132/3132772.svg" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="style/card.css" />
+  <link rel="stylesheet" href="style/win.css" />
+  <link rel="stylesheet" href="style/responsive.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Memory Card Game</h1>
+    <nav>
+    </nav>
+  </header>
+  <div id="victory">
+    <div id="container">
+      <h1>Congratulations!</h1>
+      <p>You found all pairs with</p>
+      <h2><span id="victoryMovements">0</span> Errors</h2>
+      <a href="index.html">Play again</a>
+    </div>
+  </div>
+  <section id="responsive">
+    <h2>Errors <span id="movements2">0</span></h2>
+    <a href="index.html">Restart</a>
+  </section>
+
+  <div class="body1">
+    <section id="esc">
+      <h2>Errors <span id="movements">0</span></h2>
+      <a href="index.html">Restart</a>
+    </section>
+    <section class="game">
+      <div class="card" data-nome="frog">
+        <img class="front" src="images/frog.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="frog">
+        <img class="front" src="images/frog.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="cow">
+        <img class="front" src="images/cow.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="cow">
+        <img class="front" src="images/cow.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="kangaroo">
+        <img class="front" src="images/kangaroo.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="kangaroo">
+        <img class="front" src="images/kangaroo.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="lion">
+        <img class="front" src="images/lion.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="lion">
+        <img class="front" src="images/lion.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="bird">
+        <img class="front" src="images/bird.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="bird">
+        <img class="front" src="images/bird.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="elephant">
+        <img class="front" src="images/elephant.png" alt="card" />
+
+      </div>
+      <div class="card" data-nome="elephant">
+        <img class="front" src="images/elephant.png" alt="card" />
+
+      </div>
+    </section>
+    <section id="dir"></section>
+  </div>
+  <footer>
+    <ul>
+      <li>
+        <h3>Good luck!</h3>
+      </li>
+    </ul>
+  </footer>
+  <script src="script/index.js"></script>
+</body>
+
+</html>
