@@ -24,7 +24,7 @@ const Sidebar = () => {
         </button>
 
         <figure className="avatar-box">
-          {/* <img src={myAvatar} alt="Ido Roth" width="80" /> */}
+          <img src={myAvatar} alt="Ido Roth" width="80" />
         </figure>
 
         <div className="info-content">
