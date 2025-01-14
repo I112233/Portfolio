@@ -1,5 +1,5 @@
 import { useState } from "react";
-import myAvatar from "../../assets/images/ido-avatar.png";
+// import myAvatar from "../../assets/images/ido-avatar.png";
 
 import "ionicons";
 
@@ -24,7 +24,7 @@ const Sidebar = () => {
         </button>
 
         <figure className="avatar-box">
-          <img src={myAvatar} alt="Ido Roth" width="80" />
+          {/* <img src={myAvatar} alt="Ido Roth" width="80" /> */}
         </figure>
 
         <div className="info-content">
