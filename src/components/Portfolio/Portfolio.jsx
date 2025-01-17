@@ -35,7 +35,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="/React-Portfolio-2/src/assets/images/Calculator-Preview.png"
+                  src="../../assets/Calculator-Preview.png"
                   alt="calculator"
                   loading="lazy"
                 />
@@ -64,7 +64,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="/React-Portfolio-2/src/assets/images/Memory-Card-Game-Preview.png"
+                  src="../../assets/Memory-Card-Game-Preview.png"
                   alt="Memory Card Game"
                   loading="lazy"
                 />
@@ -93,7 +93,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="/React-Portfolio-2/src/assets/images/Puzzle-Game-Preview.png"
+                  src="../../assets/Puzzle-Game-Preview.png"
                   alt="Puzzle Game"
                   loading="lazy"
                 />
@@ -127,7 +127,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="/React-Portfolio-2/src/assets/images/Snake-Game-Preview.png"
+                  src="../../assets/Snake-Game-Preview.png"
                   alt="Snake Game"
                   loading="lazy"
                 />
@@ -156,7 +156,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="/React-Portfolio-2/src/assets/images/Tetris-Game-Preview.png"
+                  src="../../assets/Tetris-Game-Preview.png"
                   alt="Tetris Game"
                   loading="lazy"
                 />
@@ -185,7 +185,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="/React-Portfolio-2/src/assets/images/TicTacToe-Game-Preview.png"
+                  src="../../assets/TicTacToe-Game-Preview.png"
                   alt="Tic-Tac-Toe Game"
                   loading="lazy"
                 />
@@ -218,7 +218,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="/React-Portfolio-2/src/assets/images/TicTacToe-Game-Preview.png"
+                  src="../../assets/TicTacToe-Game-Preview.png"
                   alt="Tic-Tac-Toe Game"
                   loading="lazy"
                 />
@@ -246,7 +246,7 @@ export default Portfolio;
 //     id: 1,
 //     title: "Calculator",
 //     description: "A simple calculator",
-//     imgSrc: "../../assets/images/Calculator-Preview.png",
+//     imgSrc: "../../assets/Calculator-Preview.png",
 //     alt: "calculator",
 //     onClick: () => alert("Calculator Function executed!"),
 //   },
@@ -254,7 +254,7 @@ export default Portfolio;
 //     id: 2,
 //     title: "Memory Card Game",
 //     description: "A challenging memory-based game",
-//     imgSrc: "/images/Memory Card Game Preview.png",
+//     imgSrc: "/Memory Card Game Preview.png",
 //     alt: "Memory Card Game",
 //     onClick: () => alert("Memory Function executed!"),
 //   },
@@ -262,7 +262,7 @@ export default Portfolio;
 //     id: 3,
 //     title: "Puzzle Game",
 //     description: "A fun puzzle game",
-//     imgSrc: "/images/Puzzle Game Preview.png",
+//     imgSrc: "/Puzzle Game Preview.png",
 //     alt: "Puzzle Game",
 //     onClick: () => alert("Puzzle Function executed!"),
 //   },
@@ -270,7 +270,7 @@ export default Portfolio;
 //     id: 4,
 //     title: "Snake Game",
 //     description: "A simple snake game",
-//     imgSrc: "/images/Snake Game Preview.png",
+//     imgSrc: "/Snake Game Preview.png",
 //     alt: "Snake Game",
 //     onClick: () => alert("Snake Function executed!"),
 //   },
@@ -278,7 +278,7 @@ export default Portfolio;
 //     id: 5,
 //     title: "Tetris Game",
 //     description: "A simple Tetris game",
-//     imgSrc: "/images/Tetris Game Preview.png",
+//     imgSrc: "/Tetris Game Preview.png",
 //     alt: "Tetris Game",
 //     onClick: () => alert("Tetris Function executed!"),
 //   },
@@ -286,7 +286,7 @@ export default Portfolio;
 //     id: 6,
 //     title: "Tic-Tac-Toe",
 //     description: "A simple tic-tac-toe game",
-//     imgSrc: "/images/TicTacToe Game Preview.png",
+//     imgSrc: "/TicTacToe Game Preview.png",
 //     alt: "Tic-Tac-Toe Game",
 //     onClick: () => alert("TicTacToe Function executed!"),
 //   },

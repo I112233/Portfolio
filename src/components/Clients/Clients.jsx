@@ -13,7 +13,7 @@ const Clients = () => {
         ].map((logo, index) => (
           <li className="clients-item" key={index}>
             <a href="#">
-              <img src={`/React-Portfolio-2/src/assets/images/${logo}`} alt="client logo" />
+              <img src={`../../assets/${logo}`} alt="client logo" />
             </a>
           </li>
         ))}

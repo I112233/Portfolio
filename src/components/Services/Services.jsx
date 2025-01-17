@@ -1,5 +1,5 @@
-import webDesign from "../../assets/images/icon-design.svg";
-import webDev from "../../assets/images/icon-dev.svg";
+import webDesign from "../../assets/icon-design.svg";
+import webDev from "../../assets/icon-dev.svg";
 
 const Service = () => {
   return (

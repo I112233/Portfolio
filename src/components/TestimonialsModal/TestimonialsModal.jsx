@@ -26,7 +26,7 @@ const TestimonialsModal = ({ data, closeModal }) => {
           <figure className="modal-avatar-box">
             <img src={data.avatar} alt={data.name} width="80" data-modal-img />
           </figure>
-          {/* <img src="images/icon-quote.svg" alt="quote icon" /> */}
+          {/* <img src="src\assets\icon-quote.svg" alt="quote icon" /> */}
         </div>
 
         <div className="modal-content">
