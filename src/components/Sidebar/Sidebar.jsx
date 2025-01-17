@@ -44,7 +44,7 @@ const Sidebar = () => {
             </div>
             <div className="contact-info">
               <p className="contact-title">Email</p>
-              <p className="contact-link">idoroth4@gmail.com</p>
+              <p className="contact-link"><a style={{ color: 'white', textDecoration: 'none' }} href="mailto:idoroth4@gmail.com">idoroth4@gmail.com</a></p>
             </div>
           </li>
           <li className="contact-item">
@@ -53,7 +53,10 @@ const Sidebar = () => {
             </div>
             <div className="contact-info">
               <p className="contact-title">Phone</p>
-              <p className="contact-link">+972 54-833-3107</p>
+              <p className="contact-link"><a
+                href="tel:+972548333107"
+                style={{ color: 'white', textDecoration: 'none' }}
+              >+972 54-833-3107</a></p>
             </div>
           </li>
           <li className="contact-item">
@@ -79,7 +82,7 @@ const Sidebar = () => {
         <ul className="social-list">
           <li className="social-item">
             <a
-              href="https://www.facebook.com/profile.php?id=100002097524154&locale=he_IL"
+              href="https://www.facebook.com/profile.php?id=61565891480362&locale=he_IL"
               className="social-link"
             >
               <ion-icon name="logo-facebook"></ion-icon>
@@ -87,7 +90,7 @@ const Sidebar = () => {
           </li>
           <li className="social-item">
             <a
-              href="www.linkedin.com/in/ido-roth-67341528a"
+              href="https://www.linkedin.com/in/ido-roth-67341528a/"
               className="social-link"
             >
               <ion-icon name="logo-linkedin"></ion-icon>
@@ -95,7 +98,7 @@ const Sidebar = () => {
           </li>
           <li className="social-item">
             <a
-              href=""
+              href="https://www.instagram.com/ido111222333/"
               className="social-link"
             >
               <ion-icon name="logo-instagram"></ion-icon>
