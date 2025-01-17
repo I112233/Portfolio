@@ -1,5 +1,5 @@
 import { useState } from "react";
-import myAvatar from "../../assets/images/ido-avatar.png";
+import myAvatar from "../../assets/images/ido-avatar-C_hoHd-2.png";
 
 import "ionicons";
 
