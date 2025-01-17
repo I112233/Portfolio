@@ -64,7 +64,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="src/assets/images/Memory Card Game Preview.png"
+                  src="src/assets/images/Memory-Card-Game-Preview.png"
                   alt="Memory Card Game"
                   loading="lazy"
                 />
@@ -93,7 +93,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="src/assets/images/Puzzle Game Preview.png"
+                  src="src/assets/images/Puzzle-Game-Preview.png"
                   alt="Puzzle Game"
                   loading="lazy"
                 />
@@ -127,7 +127,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="src/assets/images/Snake Game Preview.png"
+                  src="src/assets/images/Snake-Game-Preview.png"
                   alt="Snake Game"
                   loading="lazy"
                 />
@@ -156,7 +156,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="src/assets/images/Tetris Game Preview.png"
+                  src="src/assets/images/Tetris-Game-Preview.png"
                   alt="Tetris Game"
                   loading="lazy"
                 />
@@ -185,7 +185,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="src/assets/images/TicTacToe Game Preview.png"
+                  src="src/assets/images/TicTacToe-Game-Preview.png"
                   alt="Tic-Tac-Toe Game"
                   loading="lazy"
                 />
@@ -218,7 +218,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="src/assets/images/TicTacToe Game Preview.png"
+                  src="src/assets/images/TicTacToe-Game-Preview.png"
                   alt="Tic-Tac-Toe Game"
                   loading="lazy"
                 />
