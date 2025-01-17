@@ -1,4 +1,12 @@
 import './Portfolio.module.css';
+import calculator from "../../assets/Calculator-Preview.png";
+import memoryGame from "../../assets/Memory-Card-Game-Preview.png";
+import puzzle from "../../assets/Puzzle-Game-Preview.png";
+import snake from "../../assets/Snake-Game-Preview.png";
+import tetris from "../../assets/Tetris-Game-Preview.png";
+import ticTacToe from "../../assets/TicTacToe-Game-Preview.png";
+
+
 const Portfolio = () => {
   return (
     <article className="portfolio active" data-page="portfolio" id="PortfolioPage">
@@ -35,7 +43,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="../../assets/Calculator-Preview.png"
+                  src={calculator}
                   alt="calculator"
                   loading="lazy"
                 />
@@ -64,7 +72,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="../../assets/Memory-Card-Game-Preview.png"
+                  src={memoryGame}
                   alt="Memory Card Game"
                   loading="lazy"
                 />
@@ -93,7 +101,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="../../assets/Puzzle-Game-Preview.png"
+                  src={puzzle}
                   alt="Puzzle Game"
                   loading="lazy"
                 />
@@ -127,7 +135,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="../../assets/Snake-Game-Preview.png"
+                  src={snake}
                   alt="Snake Game"
                   loading="lazy"
                 />
@@ -156,7 +164,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="../../assets/Tetris-Game-Preview.png"
+                  src={tetris}
                   alt="Tetris Game"
                   loading="lazy"
                 />
@@ -185,7 +193,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="../../assets/TicTacToe-Game-Preview.png"
+                  src={ticTacToe}
                   alt="Tic-Tac-Toe Game"
                   loading="lazy"
                 />
@@ -218,7 +226,7 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src="../../assets/TicTacToe-Game-Preview.png"
+                  src={ticTacToe}
                   alt="Tic-Tac-Toe Game"
                   loading="lazy"
                 />
