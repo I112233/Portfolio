@@ -87,7 +87,7 @@ const Sidebar = () => {
           </li>
           <li className="social-item">
             <a
-              href="https://www.linkedin.com/in/almayo-mekonen-0835942b4/"
+              href="www.linkedin.com/in/ido-roth-67341528a"
               className="social-link"
             >
               <ion-icon name="logo-linkedin"></ion-icon>
@@ -95,7 +95,7 @@ const Sidebar = () => {
           </li>
           <li className="social-item">
             <a
-              href="https://www.instagram.com/almayomekonen/"
+              href=""
               className="social-link"
             >
               <ion-icon name="logo-instagram"></ion-icon>
