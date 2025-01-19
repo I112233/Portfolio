@@ -63,7 +63,7 @@ const Contact = () => {
           <button
             className="form-btn"
             type="submit"
-            // disabled
+            disabled
             data-form-btn
           // aria-disabled="true"
           >
