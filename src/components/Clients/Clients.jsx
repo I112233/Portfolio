@@ -19,9 +19,9 @@ const Clients = () => {
           logo6,
         ].map((logo, index) => (
           <li className="clients-item" key={index}>
-            <a href="#">
-              <img src={logo} alt="client logo" />
-            </a>
+            {/* <a href=""> */}
+            <img src={logo} alt="client logo" />
+            {/* </a> */}
           </li>
         ))}
       </ul>

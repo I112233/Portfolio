@@ -26,11 +26,12 @@ const About = () => {
         <p>
           I am a Full Stack developer from Lod, Israel.
         </p>
+        <br />
         <p>
           My job is to build your website so that it is functional,
-          user-friendly and attractive at the same time. <br /> Furthermore, I add
+          user-friendly and attractive at the same time. <br /><br /> Furthermore, I add
           personal touch to your website and make sure that it is
-          eye-catching and easy to use.  <br /> My aim is to bring across your
+          eye-catching and easy to use.  <br /><br /> My aim is to bring across your
           message and identity in the most creative way.
         </p>
         <Service />

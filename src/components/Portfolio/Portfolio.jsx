@@ -1,10 +1,10 @@
-import './Portfolio.module.css';
-import calculator from "../../assets/Calculator-Preview.png";
-import memoryGame from "../../assets/Memory-Card-Game-Preview.png";
-import puzzle from "../../assets/Puzzle-Game-Preview.png";
-import snake from "../../assets/Snake-Game-Preview.png";
-import tetris from "../../assets/Tetris-Game-Preview.png";
-import ticTacToe from "../../assets/TicTacToe-Game-Preview.png";
+import './Portfolio.css';
+import ticTacToe from "../../assets/tic-tac-toe-screenshot.png";
+import memoryGame from "../../assets/memory-game-screenshot.png";
+import rockPaperScissors from "../../assets/rock-paper-scissors-screenshot.png";
+import taskManagement from "../../assets/task-management-screenshot.png";
+import YouTube from "../../assets/YouTube-screenshot.png";
+import placePicker from "../../assets/place-picker-screenshot.png";
 
 
 const Portfolio = () => {
@@ -43,13 +43,14 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src={calculator}
+                  src={ticTacToe}
+                  style={{ height: "160px" }}
                   alt="calculator"
                   loading="lazy"
                 />
               </figure>
 
-              <h3 className="project-title">Tic-tac-toe game</h3>
+              <h3 className="project-title">Tic-tac-toe</h3>
               <p
                 style={{ color: "var(--light-gray)", fontSize: "small" }}
                 className="description-text"
@@ -65,7 +66,7 @@ const Portfolio = () => {
             data-category="web development"
           // onClick={MemoryFunction()}
           >
-            <a href="https://i112233.github.io/Memory-Game/">
+            <a href="https://i112233.github.io/memory-game/">
               <figure className="project-img">
                 <div className="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
@@ -73,12 +74,13 @@ const Portfolio = () => {
 
                 <img
                   src={memoryGame}
+                  style={{ height: "160px" }}
                   alt="Memory Card Game"
                   loading="lazy"
                 />
               </figure>
 
-              <h3 className="project-title">Memory Card Game</h3>
+              <h3 className="project-title">Memory Cards</h3>
               <p
                 style={{ color: "var(--light-gray)", fontSize: "small" }}
                 className="description-text"
@@ -101,13 +103,14 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src={puzzle}
+                  src={rockPaperScissors}
+                  style={{ height: "160px" }}
                   alt="Puzzle Game"
                   loading="lazy"
                 />
               </figure>
 
-              <h3 className="project-title">Rock paper scissors game</h3>
+              <h3 className="project-title">Rock paper scissors</h3>
               <p
                 style={{ color: "var(--light-gray)", fontSize: "small" }}
                 className="description-text"
@@ -122,7 +125,7 @@ const Portfolio = () => {
 
         <ul className="project-list">
 
-          <li
+          {/* <li
             className="project-item active"
             data-filter-item
             data-category="web development"
@@ -135,18 +138,48 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src={snake}
+                  src={taskManagement}
                   alt="Snake Game"
                   loading="lazy"
                 />
               </figure>
 
-              <h3 className="project-title">Trivia Quiz</h3>
+              <h3 className="project-title">Task Management</h3>
               <p
                 style={{ color: "var(--light-gray)", fontSize: "small" }}
                 className="description-text"
               >
-                A great way to test your knowledge
+                A great tool for getting things done
+              </p>
+            </a>
+          </li> */}
+
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="web development"
+          // onClick={TicTacToeFunction()}
+          >
+            <a href="https://i112233.github.io/place-picker/">
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img
+                  src={placePicker}
+                  style={{ height: "160px" }}
+                  alt="Place Picker"
+                  loading="lazy"
+                />
+              </figure>
+
+              <h3 className="project-title">Place Picker</h3>
+              <p
+                style={{ color: "var(--light-gray)", fontSize: "small" }}
+                className="description-text"
+              >
+                Choose your favorite must-visit places
               </p>
             </a>
           </li>
@@ -164,7 +197,8 @@ const Portfolio = () => {
                 </div>
 
                 <img
-                  src={tetris}
+                  src={YouTube}
+                  style={{ height: "160px" }}
                   alt="Tetris Game"
                   loading="lazy"
                 />
@@ -176,68 +210,6 @@ const Portfolio = () => {
                 className="description-text"
               >
                 A copy of Google famous video website
-              </p>
-            </a>
-          </li>
-
-          <li
-            className="project-item active"
-            data-filter-item
-            data-category="web development"
-          // onClick={TicTacToeFunction()}
-          >
-            <a href="https://i112233.github.io/place-picker/">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img
-                  src={ticTacToe}
-                  alt="Tic-Tac-Toe Game"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Place Picker</h3>
-              <p
-                style={{ color: "var(--light-gray)", fontSize: "small" }}
-                className="description-text"
-              >
-                Choose your favorite must-visit places
-              </p>
-            </a>
-          </li>
-        </ul>
-
-        <h3 style={{ marginTop: "30px" }} className="h3 form-title">Utility</h3>
-
-        <ul className="project-list">
-          <li
-            className="project-item active"
-            data-filter-item
-            data-category="web development"
-          // onClick={TicTacToeFunction()}
-          >
-            <a href="https://i112233.github.io/management-app/">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img
-                  src={ticTacToe}
-                  alt="Tic-Tac-Toe Game"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Task Management</h3>
-              <p
-                style={{ color: "var(--light-gray)", fontSize: "small" }}
-                className="description-text"
-              >
-                Organize all your tasks in one place
               </p>
             </a>
           </li>
