@@ -65,7 +65,7 @@ const Contact = () => {
             type="submit"
             disabled
             data-form-btn
-          // aria-disabled="true"
+            aria-disabled="true"
           >
             <ion-icon name="paper-plane"></ion-icon>
             <span>Send Message</span>
